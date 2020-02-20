@@ -1,7 +1,7 @@
 import  React, { Fragment } from 'react';
 import styled from '@emotion/styled';
-import ProfileImage from '../TopBar/ProfileImage';
-import { TopInfo } from './TopInfo';
+import ProfileImage from './ProfileImage/ProfileImage';
+import { TopInfo } from './TopInfo/TopInfo';
 
 const FlexCard = styled.div({
     backgroundColor: '#fff',

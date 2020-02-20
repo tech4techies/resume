@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from '@emotion/styled';
 import Name from './Name';
+import Location from './Location';
 
 const InfoBox = styled.div({
     display: 'flex',
@@ -13,6 +14,7 @@ export const TopInfo: React.FC = () => {
         <Fragment>
             <InfoBox>
                 <Name />
+                <Location />
             </InfoBox>
         </Fragment>
     )

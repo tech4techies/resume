@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from '@emotion/styled';
-import profilePic from '../../../src/3511100.jpg'
+import profilePic from '../../../assets/3511100.jpg'
 
 
 const ImageBox = styled.div({
