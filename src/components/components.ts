@@ -7,6 +7,5 @@ export const ComponentBox = styled.div({
 
 export const ContentBox = styled.div({
     width: '100%',
-    margin: 10,
-    marginTop: 12
+    margin: 5,
 })
