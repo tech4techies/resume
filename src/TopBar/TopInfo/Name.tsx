@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from '@emotion/styled';
-import { Config } from '../../../config';
+import { Config } from '../../config';
 
 const NameBox = styled.div({
     fontWeight: 600,
