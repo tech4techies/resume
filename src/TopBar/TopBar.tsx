@@ -1,7 +1,7 @@
 import  React, { Fragment } from 'react';
 import styled from '@emotion/styled';
 import ProfileImage from './ProfileImage/ProfileImage';
-import { TopInfo } from './TopInfo/TopInfo';
+import TopInfo from '../TopBar/TopInfo/TopInfo';
 
 const FlexCard = styled.div({
     backgroundColor: '#fff',
@@ -11,7 +11,7 @@ const FlexCard = styled.div({
     flexDirection: 'row',
     marginTop: '2%',
     marginLeft: '10%',
-    boxShadow: '0px 0px 0px 2px rgb(249, 246, 246)'
+    boxShadow: '0px 0px 0px 2px rgb(240, 240, 240)'
 })
 interface IProps {
 

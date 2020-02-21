@@ -3,5 +3,8 @@ export enum Config {
     location = "2nd Avenue, Teachers Colony, 1st Block Koramangala, Bengaluru, Karnataka, India.",
     phone = "+91 9493229900, +91 9080751527",
     email = "brahmeshwar8946@gmail.com",
-    designation = "Software Developer"
+    designation = "Software Developer",
+    github = "https://github.com/brahmeshwar",
+    linkedin = "https://www.linkedin.com/in/bsn8946/",
+    twitter = "https://twitter.com/BSN8946",
 }

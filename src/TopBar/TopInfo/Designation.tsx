@@ -14,3 +14,4 @@ export const Designation:React.FC  = () => {
         </Fragment>
     )
 }
+export default Designation;

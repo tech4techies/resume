@@ -15,3 +15,4 @@ export const Phone:React.FC = () => {
         </Fragment>
     )
 }
+export default Phone;

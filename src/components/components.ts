@@ -9,3 +9,9 @@ export const ContentBox = styled.div({
     width: '100%',
     margin: 5,
 })
+
+export const IconsBox = styled.div({
+    width: 35,
+    height: 35,
+    marginTop: 10,
+})
