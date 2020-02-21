@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
-import './App.css';
 import TopBar from './TopBar/TopBar';
+import ContentBox from './ContentBox/ContentBox';
 function App() {
   return (
     <Fragment>
       <TopBar />
+      <ContentBox />
     </Fragment>
   );
 }

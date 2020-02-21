@@ -2,17 +2,9 @@ import  React, { Fragment } from 'react';
 import styled from '@emotion/styled';
 import ProfileImage from './ProfileImage/ProfileImage';
 import TopInfo from '../TopBar/TopInfo/TopInfo';
+import { FlexCard } from '../components/components';
 
-const FlexCard = styled.div({
-    backgroundColor: '#fff',
-    borderRadius: 10,
-    width: '75%',
-    display: 'flex',
-    flexDirection: 'row',
-    marginTop: '2%',
-    marginLeft: '10%',
-    boxShadow: '0px 0px 0px 2px rgb(240, 240, 240)'
-})
+
 interface IProps {
 
 }
