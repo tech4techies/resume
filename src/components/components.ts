@@ -26,3 +26,8 @@ export const FlexCard = styled.div({
     marginLeft: '10%',
     boxShadow: '0px 0px 0px 2px rgb(240, 240, 240)'
 })
+
+export const Title = styled.div({
+    fontSize: 24,
+    fontWeight: 600,
+})

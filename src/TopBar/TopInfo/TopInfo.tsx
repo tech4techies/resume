@@ -12,20 +12,20 @@ import Twitter from './Twitter';
 const InfoBox = styled.div({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: 20
+    marginTop: 20,
 })
 
 export const TopInfo: React.FC = () => {
     return(
         <Fragment>
-            <InfoBox>
+            <InfoBox style={{marginLeft: 20}}>
                 <Name />
                 <Designation />
                 <Location />
                 <Phone />
                 <Email />
             </InfoBox>
-            <InfoBox style={{marginLeft: '10%', marginTop: 50}}>
+            <InfoBox style={{marginLeft: '5%', marginRight:'5%', marginTop: 50}}>
                 <Github />
                 <Linkedin />
                 <Twitter />
