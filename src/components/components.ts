@@ -30,4 +30,24 @@ export const FlexCard = styled.div({
 export const Title = styled.div({
     fontSize: 24,
     fontWeight: 600,
+    paddingTop: 10,
+    textAlign: 'center',
 })
+
+export const ListBox = styled.div({
+    display: 'flex',
+    flexDirection: 'column',
+    padding: 3
+})
+
+export const List = styled.ol({
+    listStyle: 'none',
+})
+
+export const ListItem = styled.li({
+    padding: 5,
+    display: 'flex'
+})
+
+export const StyledImage = styled.img({})
+export const StyledListDiv = styled.div({})

@@ -8,3 +8,5 @@ export enum Config {
     linkedin = "https://www.linkedin.com/in/bsn8946/",
     twitter = "https://twitter.com/BSN8946",
 }
+
+export const skills = ['HTML, HTML5', 'CSS', 'JavaScript', 'JQuery', 'TypeScript', 'React JS', 'Node JS', 'MySQL', 'MongoDB', 'Elastic Search'];
