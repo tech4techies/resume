@@ -27,7 +27,7 @@ interface IBoxProps {
 const ListContentBox: React.FC<IBoxProps> = (props) => {
     const { vals } = props;
     return(
-        <FlexBox style={{flexDirection: 'column' }}>
+        <FlexBox style={{flexDirection: 'column' }} >
             <FlexBox style={{ marginLeft: 30, marginBottom: 5, marginTop: 5}}>
             {vals.qualification}  { vals.specialization.length > 0 && `( ${vals.specialization} )`} {`, Grade : ${parseFloat(vals.percentage.toString()).toFixed(2)}%`} 
             </FlexBox>
@@ -72,7 +72,7 @@ const Education:React.FC = () => {
     const onCollapseClick = () => setShowMore(!showMore);
     return (
         <Fragment>
-            <ListBox style={{marginLeft: '8%'}}>
+            <ListBox style={{marginLeft: '8%', width: '100%'}}>
                 <Title>Education</Title>
                 {!showMore && (
                     <List>
