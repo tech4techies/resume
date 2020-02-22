@@ -14,7 +14,6 @@ interface IListProps {
 
 const ListHeading: React.FC<IListProps> = (props) => {
     const { val } = props;
-    console.log(typeof val);
     return (
         <StyledListDiv style={{marginTop: 1, fontSize:18, fontWeight:600, marginLeft:3 }}>
             {val}
@@ -36,7 +35,7 @@ const ListContentBox: React.FC<IBoxProps> = (props) => {
             {vals.years}   
             </StyledListDiv>    
             <StyledListDiv style={{ marginLeft: 30, display: 'flex', flexDirection: 'row'}}>
-            {vals.location}  
+            {`${vals.location}.`}  
             </StyledListDiv>    
         </StyledListDiv>
     )
