@@ -51,3 +51,4 @@ export const ListItem = styled.li({
 
 export const StyledImage = styled.img({})
 export const StyledListDiv = styled.div({})
+export const FlexBox = styled.div({display: 'flex'})

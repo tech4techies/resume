@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { ListBox, Title, List, StyledListDiv, StyledImage, ListItem } from '../../components/components';
+import { FlexBox, List, ListBox, ListItem, StyledImage, StyledListDiv, Title } from '../../components/components';
 import { Config } from '../../config';
 
 
@@ -27,17 +27,17 @@ interface IBoxProps {
 const ListContentBox: React.FC<IBoxProps> = (props) => {
     const { vals } = props;
     return(
-        <StyledListDiv style={{display: 'flex', flexDirection: 'column' }}>
-            <StyledListDiv style={{ marginLeft: 30, display: 'flex', flexDirection: 'row', marginBottom: 5, marginTop: 5}}>
+        <FlexBox style={{flexDirection: 'column' }}>
+            <FlexBox style={{ marginLeft: 30, marginBottom: 5, marginTop: 5}}>
             {vals.qualification}  { vals.specialization.length > 0 && `( ${vals.specialization} )`} {`, Grade : ${parseFloat(vals.percentage.toString()).toFixed(2)}%`} 
-            </StyledListDiv>
-            <StyledListDiv style={{ marginLeft: 30, display: 'flex', flexDirection: 'row'}}>
+            </FlexBox>
+            <FlexBox style={{ marginLeft: 30}}>
             {vals.years}   
-            </StyledListDiv>    
-            <StyledListDiv style={{ marginLeft: 30, display: 'flex', flexDirection: 'row'}}>
+            </FlexBox>    
+            <FlexBox style={{ marginLeft: 30}}>
             {`${vals.location}.`}  
-            </StyledListDiv>    
-        </StyledListDiv>
+            </FlexBox>    
+        </FlexBox>
     )
 }
 
@@ -46,10 +46,10 @@ interface ICollapseProps {
     onCollapseClick: () => void;
 }
 const CollapseLink: React.FC<ICollapseProps> = (props) => {
-return <StyledListDiv onClick={props.onCollapseClick} 
+return <FlexBox onClick={props.onCollapseClick} 
             style={{color:'blue', cursor:'pointer', textDecoration:'underline', marginLeft: /Less/gi.test(props.val) ?'78%': '70%'}}> 
                 {props.val} 
-        </StyledListDiv>
+        </FlexBox>
 }
 
 interface IEduDetail {
@@ -92,9 +92,9 @@ const Education:React.FC = () => {
                                 return(
                                     <Fragment>
                                         <ListItem style={{flexDirection: 'column'}} key={level}>
-                                            <StyledListDiv style={{display: 'flex'}}>
+                                            <FlexBox>
                                                 <StarImage/><ListHeading val={name} />
-                                            </StyledListDiv>
+                                            </FlexBox>
                                             <ListContentBox vals={rest} />
                                         </ListItem>
                                     </Fragment>
