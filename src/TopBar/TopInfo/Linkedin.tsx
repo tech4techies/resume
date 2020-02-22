@@ -6,7 +6,7 @@ export const Linkedin:React.FC = () => {
         <Fragment>
             <IconsBox >
                 <a href={Config.linkedin} target="blank"><img src={'https://cdn.convertcart.com/uploads/beb71356.svg'}
-                 style={{width: '100%'}} title="Linkedin" /></a>
+                 style={{width: '100%'}} alt="" title="Linkedin" /></a>
             </IconsBox>
         </Fragment>
     )

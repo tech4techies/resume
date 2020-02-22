@@ -7,7 +7,7 @@ export const Designation:React.FC  = () => {
         <Fragment>
             <ComponentBox>
                 <img src="https://cdn.convertcart.com/uploads/8aa459ae.svg" alt=""/>
-                <ContentBox style={{fontWeight: 600}}>
+                <ContentBox style={{fontWeight: 600, marginTop: 8}}>
                     { Config.designation }
                 </ContentBox>
             </ComponentBox>

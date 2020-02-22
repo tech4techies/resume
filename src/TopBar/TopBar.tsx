@@ -1,8 +1,7 @@
-import  React, { Fragment } from 'react';
-import styled from '@emotion/styled';
-import ProfileImage from './ProfileImage/ProfileImage';
-import TopInfo from '../TopBar/TopInfo/TopInfo';
+import React, { Fragment } from 'react';
 import { FlexCard } from '../components/components';
+import TopInfo from '../TopBar/TopInfo/TopInfo';
+import ProfileImage from './ProfileImage/ProfileImage';
 
 
 interface IProps {
