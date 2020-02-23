@@ -33,5 +33,5 @@ export const Config =  {
             percentage: 93.00,
             years: '2012-2013'
         }
-    }
+    },
 }
