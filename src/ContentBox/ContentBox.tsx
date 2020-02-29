@@ -19,7 +19,7 @@ export const ContentBox = () => {
         <FlexBox
           style={{
             flexDirection: "column",
-            width: "50%",
+            width: "45%",
             alignItems: "center",
           }}>
           <Education />

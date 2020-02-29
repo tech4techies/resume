@@ -20,11 +20,11 @@ export const IconsBox = styled.div({
 export const FlexCard = styled.div({
   backgroundColor: "#fff",
   borderRadius: 10,
-  width: "75%",
+  width: "80%",
   display: "flex",
   flexDirection: "row",
   marginTop: "2%",
-  marginLeft: "10%",
+  marginLeft: "8%",
   boxShadow: "0px 0px 0px 2px rgb(240, 240, 240)",
 });
 
