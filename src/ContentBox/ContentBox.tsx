@@ -18,10 +18,12 @@ export const ContentBox = () => {
             flexDirection: "column",
             width: "30%",
             alignItems: "center",
+            borderRight: "1px solid",
           }}>
           <Education />
           <Experience />
         </FlexBox>
+        <FlexBox></FlexBox>
       </FlexCard>
     </Fragment>
   );

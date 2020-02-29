@@ -50,7 +50,7 @@ const ListContentBox: React.FC<IBoxProps> = (props) => {
           <Fragment>
             <BulletList>
               {vals.responsibilites.map((resp) => (
-                <li style={{ fontSize: 14 }}>{resp}</li>
+                <li style={{ fontSize: 14, width: "100%" }}>{resp}</li>
               ))}
             </BulletList>
           </Fragment>
@@ -85,13 +85,13 @@ const Experience: React.FC = () => {
                 {showResp[index] && (
                   <CollapseLink
                     onCollapseClick={(e: any) => onCollapseClick(index)}
-                    val={" Hide "}
+                    val={" - Hide"}
                   />
                 )}
                 {!showResp[index] && (
                   <CollapseLink
                     onCollapseClick={(e: any) => onCollapseClick(index)}
-                    val={" View More "}
+                    val={" + View More "}
                   />
                 )}
               </ListItem>
