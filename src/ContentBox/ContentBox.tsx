@@ -7,6 +7,7 @@ import Education from "./Education/Education";
 import Experience from "./Experience/Experience";
 import Projects from "./Projects/Projects";
 import Languages from "./Languages/Languages";
+import Achievements from "./Achievements/Achievements";
 
 export const ContentBox = () => {
   return (
@@ -25,8 +26,14 @@ export const ContentBox = () => {
           <Education />
           <Experience />
         </FlexBox>
-        <FlexBox style={{ textAlign: "center", width: "30%" }}>
+        <FlexBox
+          style={{
+            flexDirection: "column",
+            textAlign: "center",
+            width: "30%",
+          }}>
           <Projects />
+          <Achievements />
         </FlexBox>
       </FlexCard>
     </Fragment>

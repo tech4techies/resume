@@ -116,4 +116,9 @@ export const Config = {
       duration: "Dec 2018 - Mar 2019",
     },
   ],
+  achievements: [
+    'I was recognized by my skills in learning new things and I was made a part of "Game Changers Team" of Cognizant Technology Solutions.',
+    'I was recognized by my capabilities for learning & delivering quickly and bagged "Rockstar Rookie" award from ConvertCart Pvt. Ltd.',
+    'Bagged "Elite" badge from "NPTEL - IIT Kharagpur" for performing good in "Cloud Computing" certification course.',
+  ],
 };
