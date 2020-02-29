@@ -2,14 +2,13 @@
 
 import React, { Fragment } from "react";
 import {
+  Box,
+  List,
   ListBox,
   ListItem,
-  List,
   Title,
-  FlexBox,
 } from "../../components/components";
 import { Config } from "../../config";
-import { StarImage } from "../../components/common";
 
 export const Interests: React.FC = () => {
   const { interests } = Config;
@@ -20,10 +19,14 @@ export const Interests: React.FC = () => {
         <List>
           {interests.map((interest) => (
             <ListItem key={interest}>
-              <FlexBox>
-                <StarImage />
+              <Box
+                style={{
+                  padding: 5,
+                  border: "1px solid darkgray",
+                  borderRadius: 5,
+                }}>
                 {interest}
-              </FlexBox>
+              </Box>
             </ListItem>
           ))}
         </List>
