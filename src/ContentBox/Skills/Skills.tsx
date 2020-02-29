@@ -1,25 +1,15 @@
 /** @format */
 
 import React, { Fragment } from "react";
+import { StarImage } from "../../components/common";
 import {
-  Title,
-  ListBox,
   List,
+  ListBox,
   ListItem,
-  StyledImage,
   StyledListDiv,
+  Title,
 } from "../../components/components";
 import { Config } from "../../config";
-
-const StarImage: React.FC = () => {
-  return (
-    <StyledImage
-      style={{ height: 20, width: 20 }}
-      src={"https://cdn.convertcart.com/uploads/ac8ea213.svg"}
-      alt=''
-    />
-  );
-};
 
 interface IListProps {
   val: string;
@@ -39,7 +29,7 @@ const Skills: React.FC = () => {
         <List>
           {Config.skills.map((skill) => (
             <ListItem key={skill}>
-              <StarImage /> <ListContent val={skill} />{" "}
+              <StarImage /> <ListContent val={skill} />
             </ListItem>
           ))}
         </List>

@@ -6,38 +6,22 @@ import {
   List,
   ListBox,
   ListItem,
-  StyledImage,
   StyledListDiv,
   Title,
+  Box,
 } from "../../components/components";
 import { Config } from "../../config";
+import { StarImage, ListHeading } from "../../components/common";
 
-const StarImage: React.FC = () => {
-  return (
-    <StyledImage
-      style={{ height: 18, width: 18, marginTop: 2 }}
-      src={"https://cdn.convertcart.com/uploads/ac8ea213.svg"}
-      alt=''
-    />
-  );
-};
-
-interface IListProps {
-  val: string;
+interface IBoxType {
+  qualification: string;
+  specialization: string;
+  percentage: number;
+  years: string;
+  location: string;
 }
-
-const ListHeading: React.FC<IListProps> = (props) => {
-  const { val } = props;
-  return (
-    <StyledListDiv
-      style={{ marginTop: 1, fontSize: 18, fontWeight: 600, marginLeft: 3 }}>
-      {val}
-    </StyledListDiv>
-  );
-};
-
 interface IBoxProps {
-  vals: any;
+  vals: IBoxType;
 }
 const ListContentBox: React.FC<IBoxProps> = (props) => {
   const { vals } = props;
@@ -48,28 +32,29 @@ const ListContentBox: React.FC<IBoxProps> = (props) => {
         {vals.specialization.length > 0 && `( ${vals.specialization} )`}{" "}
         {`, Grade : ${parseFloat(vals.percentage.toString()).toFixed(2)}%`}
       </FlexBox>
-      <FlexBox style={{ marginLeft: 30 }}>{vals.years}</FlexBox>
-      <FlexBox style={{ marginLeft: 30 }}>{`${vals.location}.`}</FlexBox>
+      <Box style={{ marginLeft: 30 }}>{vals.years}</Box>
+      <Box style={{ marginLeft: 30 }}>{`${vals.location}.`}</Box>
     </FlexBox>
   );
 };
 
 interface ICollapseProps {
   val: string;
-  onCollapseClick: () => void;
+  onCollapseClick: (index?: number) => void;
 }
+
 const CollapseLink: React.FC<ICollapseProps> = (props) => {
   return (
-    <FlexBox
-      onClick={props.onCollapseClick}
+    <div
       style={{
         color: "blue",
         cursor: "pointer",
         textDecoration: "underline",
         marginLeft: /Less/gi.test(props.val) ? "78%" : "70%",
-      }}>
+      }}
+      onClick={(e: any) => props.onCollapseClick(e)}>
       {props.val}
-    </FlexBox>
+    </div>
   );
 };
 
@@ -97,7 +82,7 @@ const Education: React.FC = () => {
         <Title>Education</Title>
         {!showMore && (
           <List>
-            <ListItem style={{ flexDirection: "column" }}>
+            <ListItem key={name} style={{ flexDirection: "column" }}>
               <StyledListDiv style={{ display: "flex" }}>
                 <StarImage />
                 <ListHeading val={name} />
@@ -111,7 +96,7 @@ const Education: React.FC = () => {
             {levels.map((level: string) => {
               const { name, ...rest } = education[level];
               return (
-                <Fragment>
+                <Fragment key={level}>
                   <ListItem style={{ flexDirection: "column" }} key={level}>
                     <FlexBox>
                       <StarImage />

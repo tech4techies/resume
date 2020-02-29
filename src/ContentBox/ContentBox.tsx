@@ -13,7 +13,12 @@ export const ContentBox = () => {
         <FlexBox style={{ flexDirection: "column" }}>
           <Skills />
         </FlexBox>
-        <FlexBox style={{ flexDirection: "column", alignItems: "center" }}>
+        <FlexBox
+          style={{
+            flexDirection: "column",
+            width: "30%",
+            alignItems: "center",
+          }}>
           <Education />
           <Experience />
         </FlexBox>
