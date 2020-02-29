@@ -41,7 +41,11 @@ interface ICollapseProps {
 }
 
 export const CollapseLink: React.FC<ICollapseProps> = (props) => {
-  const val = /Show/gi.test(props.val) ? "66%" : "70%";
+  const val = /Show/gi.test(props.val)
+    ? "66%"
+    : /Hide/gi.test(props.val)
+    ? "80%"
+    : "70%";
   return (
     <div
       style={{
