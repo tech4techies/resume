@@ -18,7 +18,7 @@ interface IListProps {
 const ListContent: React.FC<IListProps> = (props) => {
   const { val } = props;
   return (
-    <StyledListDiv style={{ marginTop: 2, marginLeft: 3 }}>{val}</StyledListDiv>
+    <StyledListDiv style={{ marginTop: 3, marginLeft: 3 }}>{val}</StyledListDiv>
   );
 };
 const Skills: React.FC = () => {
