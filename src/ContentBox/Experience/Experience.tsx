@@ -43,12 +43,15 @@ const ListContentBox: React.FC<IBoxProps> = (props) => {
       </Box>
       <Box style={{ marginLeft: 30 }}>{vals.location}.</Box>
       {showResp && (
-        <FlexBox style={{ flexDirection: "column", marginLeft: 30 }}>
+        <FlexBox
+          style={{ flexDirection: "column", marginLeft: 30, width: "80%" }}>
           <Box style={{ fontWeight: "bold" }}>Responsibilites</Box>
           <Fragment>
             <BulletList>
               {vals.responsibilites.map((resp) => (
-                <li key={resp} style={{ fontSize: 14, width: "100%" }}>
+                <li
+                  key={resp}
+                  style={{ padding: 5, fontSize: 14, width: "100%" }}>
                   {resp}
                 </li>
               ))}
@@ -70,7 +73,7 @@ const Experience: React.FC = () => {
   };
   return (
     <Fragment>
-      <ListBox>
+      <ListBox style={{ width: "100%", marginLeft: "8%" }}>
         <Title> Experience </Title>
         <List>
           {experience.map((exp, index) => {

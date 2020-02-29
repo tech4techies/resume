@@ -44,8 +44,8 @@ export const CollapseLink: React.FC<ICollapseProps> = (props) => {
   const val = /Show/gi.test(props.val)
     ? "66%"
     : /Hide/gi.test(props.val)
-    ? "80%"
-    : "70%";
+    ? "70%"
+    : "66%";
   return (
     <div
       style={{

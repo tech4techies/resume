@@ -18,6 +18,7 @@ export const Config = {
     "TypeScript",
     "React JS",
     "Node JS",
+    "Python",
     "MySQL",
     "MongoDB",
     "Elastic Search",
@@ -81,6 +82,38 @@ export const Config = {
         "I was the only person responsible for the development and delivery of the entire product.",
         "I was also responsible for quality assurance of the product before delivery.",
       ],
+    },
+  ],
+  languages: [
+    {
+      name: "Telugu",
+      proficiency: "Mother Tongue",
+    },
+    {
+      name: "Hindi",
+      proficiency: "Full Professional Proficiency",
+    },
+    {
+      name: "English",
+      proficiency: "Full Professional Proficiency",
+    },
+  ],
+  projects: [
+    {
+      name: "IntelliSearch v2.0.1",
+      duration: "Dec 2019 - Feb 2020",
+    },
+    {
+      name: "Filters on Category Pages",
+      duration: "Oct 2019 - Nov 2019",
+    },
+    {
+      name: "IntelliSearch v1.0.0",
+      duration: "May 2019 - Dec 2019",
+    },
+    {
+      name: "Spicenews",
+      duration: "Dec 2018 - Mar 2019",
     },
   ],
 };
