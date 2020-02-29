@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { Fragment, useState } from "react";
+import { CollapseLink, ListHeading, StarImage } from "../../components/common";
 import {
   Box,
   BulletList,
@@ -8,12 +9,9 @@ import {
   List,
   ListBox,
   ListItem,
-  StyledImage,
-  StyledListDiv,
   Title,
 } from "../../components/components";
 import { Config } from "../../config";
-import { StarImage, ListHeading, CollapseLink } from "../../components/common";
 
 interface IBoxType {
   doj: string;
@@ -50,7 +48,9 @@ const ListContentBox: React.FC<IBoxProps> = (props) => {
           <Fragment>
             <BulletList>
               {vals.responsibilites.map((resp) => (
-                <li style={{ fontSize: 14, width: "100%" }}>{resp}</li>
+                <li key={resp} style={{ fontSize: 14, width: "100%" }}>
+                  {resp}
+                </li>
               ))}
             </BulletList>
           </Fragment>

@@ -11,7 +11,7 @@ import {
   Box,
 } from "../../components/components";
 import { Config } from "../../config";
-import { StarImage, ListHeading } from "../../components/common";
+import { StarImage, ListHeading, CollapseLink } from "../../components/common";
 
 interface IBoxType {
   qualification: string;
@@ -35,26 +35,6 @@ const ListContentBox: React.FC<IBoxProps> = (props) => {
       <Box style={{ marginLeft: 30 }}>{vals.years}</Box>
       <Box style={{ marginLeft: 30 }}>{`${vals.location}.`}</Box>
     </FlexBox>
-  );
-};
-
-interface ICollapseProps {
-  val: string;
-  onCollapseClick: (index?: number) => void;
-}
-
-const CollapseLink: React.FC<ICollapseProps> = (props) => {
-  return (
-    <div
-      style={{
-        color: "blue",
-        cursor: "pointer",
-        textDecoration: "underline",
-        marginLeft: /Less/gi.test(props.val) ? "78%" : "70%",
-      }}
-      onClick={(e: any) => props.onCollapseClick(e)}>
-      {props.val}
-    </div>
   );
 };
 
