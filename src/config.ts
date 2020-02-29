@@ -34,4 +34,29 @@ export const Config =  {
             years: '2012-2013'
         }
     },
+    experience : [
+        {
+            organization: 'ConvertCart Pvt. Ltd.',
+            doj: 'May 2019',
+            dol: 'Present',
+            role: 'Software Developer',
+            responsibilites: [
+
+            ]
+        },
+        {
+            organization: 'Cognizant Technology Solutions',
+            doj: 'Jan 2019',
+            dol: 'Apr 2019',
+            role: 'Business Associate Intern - (DevOps)',
+            responsibilites: []
+        },
+        {
+            organization: 'SpiceTech India Pvt. Ltd.',
+            doj: 'Dec 2018',
+            dol: 'Mar 2019',
+            role: 'Web Developer Intern',
+            responsibilites: []
+        }
+    ]
 }
