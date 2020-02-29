@@ -122,4 +122,6 @@ export const Config = {
     'Bagged "Elite" badge from "NPTEL - IIT Kharagpur" for performing good in "Cloud Computing" certification course.',
   ],
   interests: ["Listening to Music", "Travelling", "Exploring something new"],
+  downloadLink:
+    "https://drive.google.com/open?id=1DdEs7ovy4fukohLwhnTEftFy-XBrq9_e",
 };
