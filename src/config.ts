@@ -121,4 +121,5 @@ export const Config = {
     'I was recognized by my capabilities for learning & delivering quickly and bagged "Rockstar Rookie" award from ConvertCart Pvt. Ltd.',
     'Bagged "Elite" badge from "NPTEL - IIT Kharagpur" for performing good in "Cloud Computing" certification course.',
   ],
+  interests: ["Listening to Music", "Travelling", "Exploring something new"],
 };
