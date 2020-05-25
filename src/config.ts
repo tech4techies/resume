@@ -22,6 +22,9 @@ export const Config = {
     "MySQL",
     "MongoDB",
     "Elastic Search",
+    "Docker",
+    "Git",
+    "Kubernetes",
   ],
   education: {
     university: {
@@ -99,6 +102,10 @@ export const Config = {
     },
   ],
   projects: [
+    {
+      name: "Monitoring & Alerts",
+      duration: "Apr 2020 - Present",
+    },
     {
       name: "IntelliSearch v2.0.1",
       duration: "Dec 2019 - Feb 2020",

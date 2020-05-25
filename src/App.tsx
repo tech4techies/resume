@@ -1,11 +1,16 @@
-import React, { Fragment } from 'react';
-import TopBar from './TopBar/TopBar';
-import ContentBox from './ContentBox/ContentBox';
+/** @format */
+
+import React, { Fragment } from "react";
+import TopBar from "./TopBar/TopBar";
+import ContentBox from "./ContentBox/ContentBox";
+import { Box } from "./components/components";
 function App() {
   return (
     <Fragment>
-      <TopBar />
-      <ContentBox />
+      <Box style={{ width: 1360, alignItems: "center" }}>
+        <TopBar />
+        <ContentBox />
+      </Box>
     </Fragment>
   );
 }

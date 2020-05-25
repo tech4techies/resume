@@ -13,7 +13,12 @@ export const Achievements: React.FC = () => {
         <BulletList>
           {achievements.map((achievement) => (
             <li
-              style={{ width: "100%", textAlign: "left", padding: 5 }}
+              style={{
+                width: "100%",
+                textAlign: "left",
+                padding: 5,
+                letterSpacing: 0.5,
+              }}
               key={achievement}>
               {achievement}
             </li>
