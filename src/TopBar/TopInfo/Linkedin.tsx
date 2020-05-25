@@ -7,7 +7,11 @@ export const Linkedin: React.FC = () => {
   return (
     <Fragment>
       <IconsBox>
-        <a href={Config.linkedin} style={{ color: "black" }} target='blank'>
+        <a
+          href={Config.linkedin}
+          style={{ color: "black" }}
+          target='blank'
+          title='LinkedIn'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='24'

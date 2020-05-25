@@ -8,7 +8,11 @@ export const Twitter: React.FC = () => {
   return (
     <Fragment>
       <IconsBox>
-        <a href={Config.twitter} style={{ color: "black" }} target='blank'>
+        <a
+          href={Config.twitter}
+          style={{ color: "black" }}
+          target='blank'
+          title='Twitter'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='24'

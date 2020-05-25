@@ -8,7 +8,11 @@ export const Github: React.FC = () => {
   return (
     <Fragment>
       <IconsBox>
-        <a href={Config.github} style={{ color: "black" }} target='blank'>
+        <a
+          href={Config.github}
+          style={{ color: "black" }}
+          target='blank'
+          title='GitHub'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='24'
